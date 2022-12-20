@@ -21,8 +21,10 @@ variable "cidr" {
 #   type = string
 # }
 
-variable "vpc-id" {
-  type = string
+variable "vpc" {
+  type = object({
+    id = string
+  })
 }
 
 variable "az" {

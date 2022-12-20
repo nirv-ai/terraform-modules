@@ -13,10 +13,12 @@ variable "nacl" {
   })
 }
 
-variable "vpc_id" {
-  type = string
+variable "vpc" {
+  type = object({
+    id = string
+  })
 }
 
-variable "sb_ids" {
+variable "sb-ids" {
   type = list(string)
 }

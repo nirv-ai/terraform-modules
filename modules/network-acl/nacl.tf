@@ -1,6 +1,6 @@
 resource "aws_network_acl" "nacl" {
-  vpc_id     = var.vpc_id
-  subnet_ids = var.sb_ids
+  vpc_id     = var.vpc.id
+  subnet_ids = var.sb-ids
 
   egress {
     protocol   = -1
@@ -11,6 +11,7 @@ resource "aws_network_acl" "nacl" {
     to_port    = 0
   }
 
+  # TODO: check dynamic syntax example in security group
   ingress {
     protocol   = -1
     rule_no    = 1

@@ -30,6 +30,6 @@ variable "tags" {
 }
 
 
-variable "ni-id" {
-  type = string
+variable "ni" {
+  type = map(string)
 }

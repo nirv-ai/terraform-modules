@@ -13,7 +13,7 @@ resource "aws_instance" "ec2" {
   monitoring                           = var.ec2.monitor
 
   network_interface {
-    network_interface_id = var.ni-id
+    network_interface_id = var.ni.id
     device_index         = var.ni-device-index
   }
 

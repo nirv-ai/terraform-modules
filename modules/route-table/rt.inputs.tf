@@ -20,6 +20,8 @@ variable "routes" {
     cidr    = string
   }))
 }
-variable "vpc-id" {
-  type = string
+variable "vpc" {
+  type = object({
+    id = string
+  })
 }

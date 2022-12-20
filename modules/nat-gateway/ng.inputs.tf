@@ -13,10 +13,14 @@ variable "ng" {
   })
 }
 
-variable "ip-id" {
-  type = string
+variable "ip" {
+  type = object({
+    id = string
+  })
 }
 
-variable "sb-id" {
-  type = string
+variable "sb" {
+  type = object({
+    id = string
+  })
 }

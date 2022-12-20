@@ -1,7 +1,7 @@
 # @see https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group
 resource "aws_security_group" "sg" {
   name        = var.sg.name
-  vpc_id      = var.vpc-id
+  vpc_id      = var.vpc.id
   description = var.sg.desc
 
   tags = merge(var.tags, {

@@ -6,6 +6,12 @@ variable "tags" {
   })
 }
 
+variable "vpc" {
+  type = object({
+    id = string
+  })
+}
+
 variable "sg" {
   type = object({
     name    = string
@@ -39,8 +45,4 @@ variable "out" {
     protocol = "-1"
     cidrs    = ["0.0.0.0/0"]
   }]
-}
-
-variable "vpc-id" {
-  type = string
 }

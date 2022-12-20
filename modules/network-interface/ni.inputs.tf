@@ -13,8 +13,10 @@ variable "ni" {
   })
 }
 
-variable "sb-id" {
-  type = string
+variable "sb" {
+  type = object({
+    id = string
+  })
 }
 
 variable "sg-ids" {

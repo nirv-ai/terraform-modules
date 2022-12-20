@@ -13,6 +13,8 @@ variable "ig" {
   })
 }
 
-variable "vpc-id" {
-  type = string
+variable "vpc" {
+  type = object({
+    id = string
+  })
 }
