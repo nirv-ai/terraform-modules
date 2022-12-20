@@ -31,5 +31,7 @@ variable "tags" {
 
 
 variable "ni" {
-  type = map(string)
+  type = object({
+    id = string
+  })
 }
