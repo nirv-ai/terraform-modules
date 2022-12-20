@@ -13,11 +13,11 @@ variable "rt" {
   })
 }
 
-variable routes {
+variable "routes" {
   type = list(object({
     id-type = string
-    id = string
-    cidr = string
+    id      = string
+    cidr    = string
   }))
 }
 variable "vpc-id" {

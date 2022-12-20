@@ -1,5 +1,5 @@
 resource "aws_eip" "ip" {
-  vpc               = true
+  vpc = true
 
   tags = merge(var.tags, {
     Name         = var.ip.name

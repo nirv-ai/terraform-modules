@@ -6,9 +6,9 @@ resource "aws_route_table" "rt" {
   dynamic "route" {
     for_each = var.routes
     content {
-      cidr_block = route.value.cidr
+      cidr_block     = route.value.cidr
       nat_gateway_id = route.value.id-type == "nat-gateway-id" ? (route.value.id) : null
-      gateway_id = route.value.id-type == "gateway-id" ? (route.value.id) : null
+      gateway_id     = route.value.id-type == "gateway-id" ? (route.value.id) : null
     }
   }
 

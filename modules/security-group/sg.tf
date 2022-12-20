@@ -14,9 +14,9 @@ resource "aws_security_group" "sg" {
     for_each = var.in
     content {
       description = ingress.value["desc"]
-      from_port = ingress.value["from"]
-      to_port = ingress.value["to"]
-      protocol = ingress.value["protocol"]
+      from_port   = ingress.value["from"]
+      to_port     = ingress.value["to"]
+      protocol    = ingress.value["protocol"]
       cidr_blocks = ingress.value["cidrs"]
     }
   }
@@ -25,9 +25,9 @@ resource "aws_security_group" "sg" {
     for_each = var.out
     content {
       description = egress.value["desc"]
-      from_port = egress.value["from"]
-      to_port = egress.value["to"]
-      protocol = egress.value["protocol"]
+      from_port   = egress.value["from"]
+      to_port     = egress.value["to"]
+      protocol    = egress.value["protocol"]
       cidr_blocks = egress.value["cidrs"]
     }
   }

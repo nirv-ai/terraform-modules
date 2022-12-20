@@ -1,15 +1,15 @@
 variable "ec2" {
   type = object({
-    type = string
-    ami = string
+    type        = string
+    ami         = string
     iam-profile = string
-    key = string
-    monitor = bool
-    name    = string
+    key         = string
+    monitor     = bool
+    name        = string
     on-shutdown = string
-    root-size =number
-    root-type = string
-    service = string
+    root-size   = number
+    root-type   = string
+    service     = string
   })
 }
 

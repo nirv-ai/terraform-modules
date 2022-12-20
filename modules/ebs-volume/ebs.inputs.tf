@@ -10,8 +10,8 @@ variable "ebs" {
   type = object({
     name    = string
     service = string
-    type = string
-    size = number
+    type    = string
+    size    = number
   })
 }
 

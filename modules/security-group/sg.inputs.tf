@@ -10,26 +10,26 @@ variable "sg" {
   type = object({
     name    = string
     service = string
-    desc = string
+    desc    = string
   })
 }
 
 variable "in" {
   type = list(object({
-      desc = string
-      from   = number
-      to     = number
-      protocol    = string
-      cidrs = list(string)
-    }))
+    desc     = string
+    from     = number
+    to       = number
+    protocol = string
+    cidrs    = list(string)
+  }))
 }
-variable  "out" {
+variable "out" {
   type = list(object({
-    desc = string
-    from   = number
-    to     = number
-    protocol    = string
-    cidrs = list(string)
+    desc     = string
+    from     = number
+    to       = number
+    protocol = string
+    cidrs    = list(string)
   }))
 
   default = [{
