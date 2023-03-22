@@ -1,5 +1,7 @@
 # nirvai terraform modules
 
+- [racexp docs](https://github.com/nirv-ai/racexp)
+
 ## TLDR
 
 - we output everything by default, ensure to mark your vars as sensitive where appropriate
